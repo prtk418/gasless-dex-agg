@@ -81,12 +81,13 @@ const config: HardhatUserConfig = {
   },
   networks: {
     hardhat: {
-      accounts: {
-        mnemonic,
-      },
       forking: {
-        url: "https://eth-mainnet.alchemyapi.io/v2/5xuQRZenRFP-xgIbon9eePLN1Af3pkYY",
+        url: "https://eth-mainnet.alchemyapi.io/v2/5xuQRZenRFP-xgIbon9eePLN1Af3pkYY"
+        // url: "https://mainnet.infura.io/v3/2ed34e2a55154a79bde1b74b129bf1bf"
       },
+      // forking: {
+      //   url: "https://rpc-mainnet.matic.quiknode.pro",
+      // },
       chainId: 1337
     },
     arbitrum: getChainConfig("arbitrum-mainnet"),
